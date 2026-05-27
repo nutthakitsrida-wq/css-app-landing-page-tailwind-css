@@ -42,10 +42,21 @@
            ============================================================ -->
 <body class="min-h-screen bg-[#F8F8FD] font-sans text-slate-900 antialiased">
   <header class="mx-auto mt-6 max-w-7xl px-4 w-full">
-    <nav class="flex items-center justify-between rounded-full border border-slate-200 bg-white px-8 py-4 shadow-sm">
+    <nav class="flex flex-wrap items-center justify-between rounded-2xl sm:rounded-full border border-slate-200 bg-white px-6 py-4 sm:px-8 shadow-sm">
       <div class="text-2xl font-bold text-brand-dark">Acme<span class="text-brand-accent">.</span></div>
-      <div class="flex gap-8 text-sm font-medium text-slate-600">
+      <button id="hamburger-btn" class="block sm:hidden text-slate-600 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <div class="hidden sm:flex gap-8 text-sm font-medium text-slate-600">
         <a href="#" class="text-brand-accent underline underline-offset-4">Home</a>
+        <a href="#" class="transition hover:text-brand-accent">Features</a>
+        <a href="#" class="transition hover:text-brand-accent">Pricing</a>
+        <a href="#" class="transition hover:text-brand-accent">Contact</a>
+      </div>
+      <div id="mobile-menu" class="hidden w-full flex-col gap-4 pt-4 text-sm font-medium text-slate-600 border-t border-slate-100 mt-4 sm:hidden">
+        <a href="#" class="text-brand-accent">Home</a>
         <a href="#" class="transition hover:text-brand-accent">Features</a>
         <a href="#" class="transition hover:text-brand-accent">Pricing</a>
         <a href="#" class="transition hover:text-brand-accent">Contact</a>
@@ -54,16 +65,16 @@
   </header>
 
   <main>
-    <section class="flex flex-col items-center justify-center px-4 pt-32 pb-24 text-center">
+    <section class="flex flex-col items-center justify-center px-4 pt-20 pb-24 text-center sm:pt-32">
       <div class="mb-6 rounded-full bg-indigo-100 px-4 py-1 text-sm font-medium text-brand-accent">
         🌈 Acme Productivity App
       </div>
 
-      <h1 class="mb-6 text-6xl font-extrabold tracking-tight text-brand-dark">
+      <h1 class="mb-6 text-4xl font-extrabold tracking-tight text-brand-dark sm:text-6xl">
         Boost Your <span class="text-brand-accent">Product</span>ivity
       </h1>
 
-      <p class="mb-10 max-w-7xl text-lg text-slate-500">
+      <p class="mb-10 max-w-2xl text-base text-slate-500 sm:text-lg">
         Streamline your workflow with our all-in-one productivity app.
       </p>
 
