@@ -40,7 +40,7 @@
       <!-- ============================================================
            Dev 1: Hero Section + Navbar
            ============================================================ -->
-  <body class="min-h-screen bg-[#F8F8FD] font-sans text-slate-900 antialiased">
+<body class="min-h-screen bg-[#F8F8FD] font-sans text-slate-900 antialiased">
   <header class="mx-auto mt-6 max-w-7xl px-4 w-full">
     <nav class="flex items-center justify-between rounded-full border border-slate-200 bg-white px-8 py-4 shadow-sm">
       <div class="text-2xl font-bold text-brand-dark">Acme<span class="text-brand-accent">.</span></div>
@@ -113,77 +113,74 @@
           </div>
         </section>
 
-  <body class="min-h-screen bg-[#F8F8FD] font-sans text-slate-900 antialiased">
-      <!-- ============================================================
-           Dev 3: Contact Section + Footer
-           ============================================================ -->
-      <section id="contact" class="px-4 pb-12 pt-4 sm:px-6 sm:pb-16 lg:px-8">
-        <div class="mx-auto max-w-4xl">
-          <!-- Contact card -->
-          <article class="rounded-3xl bg-white px-6 py-12 shadow-sm sm:px-12 sm:py-16">
-            <h2 class="text-center text-2xl font-bold text-brand-dark sm:text-3xl">
-              Get in Touch
-            </h2>
-
-          <form class="mx-auto mt-10 max-w-lg space-y-6" action="#" method="post">
-            <div>
-              <label for="name" class="mb-1.5 block text-sm text-gray-500">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="John Doe"
-                required
-                class="w-full rounded-lg border border-gray-200 px-4 py-3 text-slate-900 placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
-              />
+        <!-- <body class="min-h-screen bg-[#F8F8FD] font-sans text-slate-900 antialiased"> -->
+          <section id="contact" class="px-4 pb-12 pt-4 sm:px-6 sm:pb-16 lg:px-8">
+            <div class="mx-auto max-w-4xl">
+              <article class="rounded-3xl bg-white px-4 py-8 shadow-sm sm:px-12 sm:py-16">
+                <h2 class="text-center text-2xl font-bold text-brand-dark sm:text-3xl">
+                  Get in Touch
+                </h2>
+    
+                <form class="mx-auto mt-10 max-w-lg space-y-6" action="#" method="post">
+                  <div>
+                    <label for="name" class="mb-1.5 block text-sm text-gray-500">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="John Doe"
+                      required
+                      class="w-full rounded-lg border border-gray-200 px-4 py-3 text-slate-900 placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
+                    />
+                  </div>
+    
+                  <div>
+                    <label for="email" class="mb-1.5 block text-sm text-gray-500">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="john@example.com"
+                      required
+                      class="w-full rounded-lg border border-gray-200 px-4 py-3 text-slate-900 placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
+                    />
+                  </div>
+    
+                  <div>
+                    <label for="message" class="mb-1.5 block text-sm text-gray-500">Message</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="5"
+                      placeholder="Your message..."
+                      required
+                      class="w-full resize-y rounded-lg border border-gray-200 px-4 py-3 text-slate-900 placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
+                    ></textarea>
+                  </div>
+    
+                  <button
+                    type="submit"
+                    class="w-full rounded-lg bg-brand-dark py-3.5 text-sm font-bold text-white hover:bg-slate-800 transition-colors"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </article>
+    
+              <footer class="mt-8 flex flex-col-reverse items-center justify-between gap-6 px-2 text-sm sm:flex-row sm:gap-0">
+                <p class="text-gray-500 text-center sm:text-left">Acme productivity app ©2024</p>
+    
+                <nav>
+                  <ul class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 sm:gap-8">
+                    <li><a href="#faq" class="font-bold text-brand-dark hover:text-indigo-600 transition-colors">FAQ</a></li>
+                    <li><a href="#terms" class="font-bold text-brand-dark hover:text-indigo-600 transition-colors">Terms</a></li>
+                    <li><a href="#ai-policy" class="font-bold text-brand-dark hover:text-indigo-600 transition-colors">AI Policy</a></li>
+                    <li><a href="#pricing" class="font-bold text-brand-dark hover:text-indigo-600 transition-colors">Pricing</a></li>
+                  </ul>
+                </nav>
+              </footer>
             </div>
-
-            <div>
-              <label for="email" class="mb-1.5 block text-sm text-gray-500">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="john@example.com"
-                required
-                class="w-full rounded-lg border border-gray-200 px-4 py-3 text-slate-900 placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
-              />
-            </div>
-
-            <div>
-              <label for="message" class="mb-1.5 block text-sm text-gray-500">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                placeholder="Your message..."
-                required
-                class="w-full resize-y rounded-lg border border-gray-200 px-4 py-3 text-slate-900 placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
-              ></textarea>
-            </div>
-
-            <button
-              type="submit"
-              class="w-full rounded-lg bg-brand-dark py-3.5 text-sm font-bold text-white hover:bg-slate-800"
-            >
-              Submit
-            </button>
-          </form>
-        </article>
-
-        <footer class="mt-8 flex items-center justify-between px-2 text-sm">
-          <p class="text-gray-500">Acme productivity app ©2024</p>
-
-          <nav>
-            <ul class="flex items-center gap-8">
-              <li><a href="#faq" class="font-bold text-brand-dark">FAQ</a></li>
-              <li><a href="#terms" class="font-bold text-brand-dark">Terms</a></li>
-              <li><a href="#ai-policy" class="font-bold text-brand-dark">AI Policy</a></li>
-              <li><a href="#pricing" class="font-bold text-brand-dark">Pricing</a></li>
-            </ul>
-          </nav>
-        </footer>
-      </div>
-    </section>
+          </section>
   </body>
+  
 </html>
